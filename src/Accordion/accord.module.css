@@ -25,7 +25,7 @@
 }
 .list{
     display: flex;
-    gap: 15px;
+    /* gap: 5px; */
     flex-direction: column;
     list-style-type: none;
 }
@@ -61,4 +61,8 @@
         background-color: rgb(62, 234, 177);
         transition: all 0.5s ease;
     }
+}
+.close{
+    background-color: #ff5e62;
+    color: white;
 }

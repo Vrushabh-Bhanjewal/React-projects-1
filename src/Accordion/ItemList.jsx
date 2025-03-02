@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 import style from './accord.module.css'
-function ItemList({curr}) {
-    const [isActive,setActive] = useState(false)
-    const handleButton=()=>{
-        setActive(!isActive)
-    }
+function ItemList({curr,isActive,onToggle}) {
+    
+    
   return (
     <li   className={style[`main-item`]}> 
         <div className={style.item}>
             <p>{curr.question}</p>
-            <button className={style.btn} onClick={handleButton}>{isActive ? 'Close' : "Show"}</button>
+            <button className={`${style.btn} ${isActive && style.close}`} onClick={onToggle}>{isActive ? 'Close' : "Show"}</button>
         </div>
         <p className={style.ans}>{isActive && curr.answer}</p>
     </li> 
