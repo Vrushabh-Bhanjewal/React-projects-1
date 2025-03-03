@@ -1,6 +1,7 @@
 import Accordion from './Accordion/Accordion'
 import Home from './Pages/Home'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Site from './Responsive Navbar/site'
 function App() {
  
   const route=createBrowserRouter([
@@ -11,6 +12,10 @@ function App() {
     {
       path:'/Accordion',
       element:<Accordion/>
+    },
+    {
+      path:'/Site',
+      element:<Site />
     }
   ])
   return <RouterProvider router={route}></RouterProvider>

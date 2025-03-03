@@ -1,0 +1,119 @@
+.container{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+}
+.header{
+    background-color: rgb(223, 237, 249);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 30px;
+}
+.logo{
+    /* font-family: 'roboto'; */
+    font-weight: 600;
+    font-size: 25px;
+    font-variant: small-caps;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    transition: all 0.5s ease;
+    & li{
+        padding: 0 5px 2px;
+        font-size: 17px;
+        &:hover{
+            border-bottom: 2px solid rgb(137, 182, 249);
+            transition: all 0.5s ease;
+        }
+    }
+}
+.menuBtn{
+    display: none;
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 25px;
+    border: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: rgb(42, 121, 248);
+        scale: 1.05;
+        transition: all o.5s ease;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:990px) {
+    .menuBtn{
+        display: flex;
+    }
+    .web-mob{
+        position: absolute;
+        top: 76px;
+        width: 110%;
+        margin-left: -30px;
+        background-color: rgb(244, 244, 244);
+    }
+    .web-big{
+        display: none;
+    }
+    .list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .hero{
+        flex-direction: column;
+    }
+ 
+}
+/* ----- Hero style------ */
+.hero{
+    gap:30px;
+    height: 90vh;
+}
+.img1{
+    min-width: 300px;
+    max-width: 40%;
+    &:hover{
+        scale: 1.05;
+        transition: all 0.5s ease;
+        box-shadow: rgb(184, 186, 185) 0px 7px 29px 0px;
+    }
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.access{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    & button{
+        width: fit-content;
+        background-color: rgb(154, 247, 202);
+        padding: 10px 20px;
+        border: none;
+        font-size: 17px;
+        margin-top: 20px;
+        &:hover{
+            background-color: rgb(91, 243, 170);
+            box-shadow: rgb(154, 247, 202) 0px 7px 29px 0px;
+        }
+    }
+}

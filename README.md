@@ -12,3 +12,4 @@ Currently, two official plugins are available:
 React Projects 1
 
 1. Accordion
+2. Responsive NavBar

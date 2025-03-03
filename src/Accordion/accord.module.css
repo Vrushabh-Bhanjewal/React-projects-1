@@ -31,17 +31,15 @@
 }
 .main-item{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .ans{
-    background-color: rgb(243, 241, 241);
+    background-color: rgb(255, 255, 255);
     padding: 10px 30px;
     /* display: none; */
     transition: all 0.5s ease;
     transform-origin: top;
 }
-
 .item{
     font-size: 16px;
     font-weight: 500;

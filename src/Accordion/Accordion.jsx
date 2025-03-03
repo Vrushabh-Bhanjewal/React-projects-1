@@ -18,15 +18,15 @@ function Accordion() {
         <div className={style.menu}>
             <h1 className={style.head1}>The Accordion</h1>
             <ol className={style.list}>
-            {
-              data.map(curr=>{
-                return <ItemList 
-                key={curr.id} 
-                curr={curr} 
-                isActive={activeId == curr.id} 
-                onToggle={()=>handleButton(curr.id)}/>
-              })
-            }  
+              {
+                data.map(curr=>{
+                  return <ItemList 
+                    key={curr.id} 
+                    curr={curr} 
+                    isActive={activeId == curr.id} 
+                    onToggle={()=>handleButton(curr.id)}/>
+                })
+              }   
             </ol>
         </div>
     </div>

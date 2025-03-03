@@ -8,6 +8,7 @@ function Home() {
             <h1 className={style.head1}>React Projects </h1>
             <ol className={style.list}>
                 <li><NavLink className={style.link} to={'/Accordion'}>Accordion</NavLink></li>
+                <li><NavLink className={style.link} to={'/Site'}>Responsive Navbar</NavLink></li>
             </ol>
         </div>
     </div>
