@@ -85,6 +85,7 @@
 .hero{
     gap:30px;
     height: 90vh;
+    padding: 20px 30px;
 }
 .img1{
     min-width: 300px;

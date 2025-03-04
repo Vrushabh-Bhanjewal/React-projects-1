@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from './navbar.module.css'
 import { IoMdMenu } from "react-icons/io";
+
 function Navbar() {
     const [ismenu,setmenu] = useState(false)
     const handleMenuToggle=()=>{

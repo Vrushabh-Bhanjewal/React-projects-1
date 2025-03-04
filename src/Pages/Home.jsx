@@ -6,10 +6,11 @@ function Home() {
     <div className={style.center}>
         <div className={style.menu}>
             <h1 className={style.head1}>React Projects </h1>
-            <ol className={style.list}>
+            <ul className={style.list}>
                 <li><NavLink className={style.link} to={'/Accordion'}>Accordion</NavLink></li>
                 <li><NavLink className={style.link} to={'/Site'}>Responsive Navbar</NavLink></li>
-            </ol>
+                <li><NavLink className={style.link} to={'/Contact'}>Dynamic Contact</NavLink></li>
+            </ul>
         </div>
     </div>
   )
